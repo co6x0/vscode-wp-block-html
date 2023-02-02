@@ -1,0 +1,14 @@
+{
+  "autoClosingPairs": [
+    ["<!-- wp:", " -->"],
+    ["<!-- /wp:", " -->"]
+  ],
+  "surroundingPairs": [
+    ["<!-- wp:", " -->"],
+    ["<!-- /wp:", " -->"]
+  ],
+  "indentationRules": {
+    "increaseIndentPattern": "^((\\s*)(<!--\\swp:)).*(\\s-->)$",
+    "decreaseIndentPattern": "^((\\s*)(<!--\\s\\/wp:)).*$"
+  }
+}

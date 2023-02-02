@@ -1,0 +1,36 @@
+{
+  "name": "wp-block-html",
+  "displayName": "WP Block HTML",
+  "description": "VSCode Extension that assist coding for unique HTML syntax used in WordPress block themes.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "html",
+        "aliases": [
+          "html",
+          "html"
+        ],
+        "extensions": [
+          ".html"
+        ],
+        "configuration": "./injection-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "injectTo": [
+          "text.html.derivative"
+        ],
+        "scopeName": "source.injection.wp-block-html",
+        "path": "./syntaxes/html.injection.json"
+      }
+    ]
+  }
+}
