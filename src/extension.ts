@@ -10,7 +10,6 @@ export function activate(context: vscode.ExtensionContext) {
   const selector: DocumentSelector = { scheme: "file", language: "html" };
   const provider: DocumentFormattingEditProvider = {
     provideDocumentFormattingEdits(document, options, token) {
-      console.log(document, options, token);
       const text = document.getText();
       const formattedText = prettier.format(text, {
         parser: "html",
