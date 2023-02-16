@@ -11,7 +11,9 @@
   },
   "main": "./out/extension.js",
   "categories": [
-    "Programming Languages"
+    "Formatters",
+    "Themes",
+    "Snippets"
   ],
   "capabilities": {
     "documentFormattingProvider": "true"
@@ -43,6 +45,12 @@
         ],
         "scopeName": "source.injection.wp-block-html",
         "path": "./syntaxes/html.injection.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets.json"
       }
     ]
   },

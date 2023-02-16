@@ -1,0 +1,659 @@
+{
+  "wp:archives": {
+    "prefix": "wp:archives",
+    "body": ["<!-- wp:archives $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:audio": {
+    "prefix": "wp:audio",
+    "body": ["<!-- wp:audio $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:avatar": {
+    "prefix": "wp:avatar",
+    "body": ["<!-- wp:avatar $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:reusable-block": {
+    "prefix": "wp:reusable-block",
+    "body": ["<!-- wp:reusable-block $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:button": {
+    "prefix": "wp:button",
+    "body": ["<!-- wp:button $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:buttons": {
+    "prefix": "wp:buttons",
+    "body": ["<!-- wp:buttons $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:calendar": {
+    "prefix": "wp:calendar",
+    "body": ["<!-- wp:calendar $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:categories-list": {
+    "prefix": "wp:categories-list",
+    "body": ["<!-- wp:categories-list $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:code": {
+    "prefix": "wp:code",
+    "body": ["<!-- wp:code $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:column": {
+    "prefix": "wp:column",
+    "body": ["<!-- wp:column $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:columns": {
+    "prefix": "wp:columns",
+    "body": ["<!-- wp:columns $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:comment-author-avatar-deprecated": {
+    "prefix": "wp:comment-author-avatar-deprecated",
+    "body": ["<!-- wp:comment-author-avatar-deprecated $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:comment-author-name": {
+    "prefix": "wp:comment-author-name",
+    "body": ["<!-- wp:comment-author-name $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:comment-content": {
+    "prefix": "wp:comment-content",
+    "body": ["<!-- wp:comment-content $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:comment-date": {
+    "prefix": "wp:comment-date",
+    "body": ["<!-- wp:comment-date $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:comment-edit-link": {
+    "prefix": "wp:comment-edit-link",
+    "body": ["<!-- wp:comment-edit-link $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:comment-reply-link": {
+    "prefix": "wp:comment-reply-link",
+    "body": ["<!-- wp:comment-reply-link $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:comment-template": {
+    "prefix": "wp:comment-template",
+    "body": ["<!-- wp:comment-template $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:comments": {
+    "prefix": "wp:comments",
+    "body": ["<!-- wp:comments $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:comments-pagination": {
+    "prefix": "wp:comments-pagination",
+    "body": ["<!-- wp:comments-pagination $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:comments-next-page": {
+    "prefix": "wp:comments-next-page",
+    "body": ["<!-- wp:comments-next-page $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:comments-page-numbers": {
+    "prefix": "wp:comments-page-numbers",
+    "body": ["<!-- wp:comments-page-numbers $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:comments-previous-page": {
+    "prefix": "wp:comments-previous-page",
+    "body": ["<!-- wp:comments-previous-page $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:comments-title": {
+    "prefix": "wp:comments-title",
+    "body": ["<!-- wp:comments-title $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:cover": {
+    "prefix": "wp:cover",
+    "body": ["<!-- wp:cover $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:embed": {
+    "prefix": "wp:embed",
+    "body": ["<!-- wp:embed $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:file": {
+    "prefix": "wp:file",
+    "body": ["<!-- wp:file $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:classic": {
+    "prefix": "wp:classic",
+    "body": ["<!-- wp:classic $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:gallery": {
+    "prefix": "wp:gallery",
+    "body": ["<!-- wp:gallery $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:group": {
+    "prefix": "wp:group",
+    "body": ["<!-- wp:group $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:heading": {
+    "prefix": "wp:heading",
+    "body": ["<!-- wp:heading $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:home-link": {
+    "prefix": "wp:home-link",
+    "body": ["<!-- wp:home-link $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:custom-html": {
+    "prefix": "wp:custom-html",
+    "body": ["<!-- wp:custom-html $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:image": {
+    "prefix": "wp:image",
+    "body": ["<!-- wp:image $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:latest-comments": {
+    "prefix": "wp:latest-comments",
+    "body": ["<!-- wp:latest-comments $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:latest-posts": {
+    "prefix": "wp:latest-posts",
+    "body": ["<!-- wp:latest-posts $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:list": {
+    "prefix": "wp:list",
+    "body": ["<!-- wp:list $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:list-item": {
+    "prefix": "wp:list-item",
+    "body": ["<!-- wp:list-item $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:login-out": {
+    "prefix": "wp:login-out",
+    "body": ["<!-- wp:login-out $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:media-text": {
+    "prefix": "wp:media-text",
+    "body": ["<!-- wp:media-text $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:unsupported": {
+    "prefix": "wp:unsupported",
+    "body": ["<!-- wp:unsupported $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:more": {
+    "prefix": "wp:more",
+    "body": ["<!-- wp:more $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:navigation": {
+    "prefix": "wp:navigation",
+    "body": ["<!-- wp:navigation $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:custom-link": {
+    "prefix": "wp:custom-link",
+    "body": ["<!-- wp:custom-link $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:submenu": {
+    "prefix": "wp:submenu",
+    "body": ["<!-- wp:submenu $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:page-break": {
+    "prefix": "wp:page-break",
+    "body": ["<!-- wp:page-break $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:page-list": {
+    "prefix": "wp:page-list",
+    "body": ["<!-- wp:page-list $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:page-list-item": {
+    "prefix": "wp:page-list-item",
+    "body": ["<!-- wp:page-list-item $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:paragraph": {
+    "prefix": "wp:paragraph",
+    "body": ["<!-- wp:paragraph $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:pattern": {
+    "prefix": "wp:pattern",
+    "body": ["<!-- wp:pattern $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-author": {
+    "prefix": "wp:post-author",
+    "body": ["<!-- wp:post-author $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-author-biography": {
+    "prefix": "wp:post-author-biography",
+    "body": ["<!-- wp:post-author-biography $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-author-name": {
+    "prefix": "wp:post-author-name",
+    "body": ["<!-- wp:post-author-name $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-comment-deprecated": {
+    "prefix": "wp:post-comment-deprecated",
+    "body": ["<!-- wp:post-comment-deprecated $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-comments-count": {
+    "prefix": "wp:post-comments-count",
+    "body": ["<!-- wp:post-comments-count $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-comments-form": {
+    "prefix": "wp:post-comments-form",
+    "body": ["<!-- wp:post-comments-form $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-comments-link": {
+    "prefix": "wp:post-comments-link",
+    "body": ["<!-- wp:post-comments-link $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-content": {
+    "prefix": "wp:post-content",
+    "body": ["<!-- wp:post-content $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-date": {
+    "prefix": "wp:post-date",
+    "body": ["<!-- wp:post-date $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-excerpt": {
+    "prefix": "wp:post-excerpt",
+    "body": ["<!-- wp:post-excerpt $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-featured-image": {
+    "prefix": "wp:post-featured-image",
+    "body": ["<!-- wp:post-featured-image $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-navigation-link": {
+    "prefix": "wp:post-navigation-link",
+    "body": ["<!-- wp:post-navigation-link $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-template": {
+    "prefix": "wp:post-template",
+    "body": ["<!-- wp:post-template $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-terms": {
+    "prefix": "wp:post-terms",
+    "body": ["<!-- wp:post-terms $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:post-title": {
+    "prefix": "wp:post-title",
+    "body": ["<!-- wp:post-title $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:preformatted": {
+    "prefix": "wp:preformatted",
+    "body": ["<!-- wp:preformatted $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:pullquote": {
+    "prefix": "wp:pullquote",
+    "body": ["<!-- wp:pullquote $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:query-loop": {
+    "prefix": "wp:query-loop",
+    "body": ["<!-- wp:query-loop $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:no-results": {
+    "prefix": "wp:no-results",
+    "body": ["<!-- wp:no-results $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:pagination": {
+    "prefix": "wp:pagination",
+    "body": ["<!-- wp:pagination $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:next-page": {
+    "prefix": "wp:next-page",
+    "body": ["<!-- wp:next-page $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:page-numbers": {
+    "prefix": "wp:page-numbers",
+    "body": ["<!-- wp:page-numbers $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:previous-page": {
+    "prefix": "wp:previous-page",
+    "body": ["<!-- wp:previous-page $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:query-title": {
+    "prefix": "wp:query-title",
+    "body": ["<!-- wp:query-title $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:quote": {
+    "prefix": "wp:quote",
+    "body": ["<!-- wp:quote $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:read-more": {
+    "prefix": "wp:read-more",
+    "body": ["<!-- wp:read-more $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:rss": {
+    "prefix": "wp:rss",
+    "body": ["<!-- wp:rss $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:search": {
+    "prefix": "wp:search",
+    "body": ["<!-- wp:search $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:separator": {
+    "prefix": "wp:separator",
+    "body": ["<!-- wp:separator $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:shortcode": {
+    "prefix": "wp:shortcode",
+    "body": ["<!-- wp:shortcode $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:site-logo": {
+    "prefix": "wp:site-logo",
+    "body": ["<!-- wp:site-logo $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:site-tagline": {
+    "prefix": "wp:site-tagline",
+    "body": ["<!-- wp:site-tagline $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:site-title": {
+    "prefix": "wp:site-title",
+    "body": ["<!-- wp:site-title $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:social-icon": {
+    "prefix": "wp:social-icon",
+    "body": ["<!-- wp:social-icon $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:social-icons": {
+    "prefix": "wp:social-icons",
+    "body": ["<!-- wp:social-icons $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:spacer": {
+    "prefix": "wp:spacer",
+    "body": ["<!-- wp:spacer $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:table": {
+    "prefix": "wp:table",
+    "body": ["<!-- wp:table $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:table-of-contents": {
+    "prefix": "wp:table-of-contents",
+    "body": ["<!-- wp:table-of-contents $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:tag-cloud": {
+    "prefix": "wp:tag-cloud",
+    "body": ["<!-- wp:tag-cloud $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:template-part": {
+    "prefix": "wp:template-part",
+    "body": ["<!-- wp:template-part $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:term-description": {
+    "prefix": "wp:term-description",
+    "body": ["<!-- wp:term-description $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:text-columns-deprecated": {
+    "prefix": "wp:text-columns-deprecated",
+    "body": ["<!-- wp:text-columns-deprecated $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:verse": {
+    "prefix": "wp:verse",
+    "body": ["<!-- wp:verse $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  },
+
+  "wp:video": {
+    "prefix": "wp:video",
+    "body": ["<!-- wp:video $1/-->"],
+    "snippetSuggestions": "top",
+    "description": "https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#archives"
+  }
+}
