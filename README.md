@@ -1,65 +1,31 @@
 # VSCode WP Block HTML
 
-This is the README for your extension "wp-block-html". After writing up a brief description, we recommend including the following sections.
+This extension assists coding of unique HTML including [Block markups](https://developer.wordpress.org/themes/block-themes/templates-and-template-parts/) for WordPress block theme.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Formatting for HTML including Block markup (powered by [Prettier](https://prettier.io/) and [prettier-plugin-wp-block-html](https://github.com/co6x0/prettier-plugin-wp-block-html))
+- Snippets for Block markup
+- Syntax highlighting
 
-For example if there is an image subfolder under your extension project workspace:
+![Extension Demo](./images/demo.gif)
 
-\!\[feature X\]\(images/feature-x.png\)
+## Usage
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Just install the extension to use Block markup syntax highlighting and snippets in your HTML files.
 
-## Requirements
+To use code formatting, you will need to change your user or workspace settings. (Mac: `⌘ + ,` | Win: `Ctrl + ,`)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+If you want to always enable code formatting with the extension, add the following to your **User**'s `setting.json`.
 
-## Extension Settings
+```json
+"[html]": {
+	"editor.defaultFormatter": "co6x0.vscode-wp-block-html"
+}
+```
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+If you want to use it only for a specific project, add the same to your **Workspace** settings. (Your project root > `.vscode` > `settings.json`)
 
-For example:
+Also, if necessary, enable automatic formatting when saving files. ( `"editor.formatOnSave": true` )
 
-This extension contributes the following settings:
-
-- `myExtension.enable`: Enable/disable this extension.
-- `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+For more information, please refer to [VScode documentation](https://code.visualstudio.com/docs/getstarted/settings).

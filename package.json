@@ -3,9 +3,9 @@
   "publisher": "co6x0",
   "version": "0.1.0",
   "license": "MIT",
-  "icon": "icon.png",
+  "icon": "./images/icon.png",
   "displayName": "WP Block HTML",
-  "description": "VSCode Extension that assist coding for unique HTML syntax used in WordPress block themes.",
+  "description": "Assist coding for unique HTML used in WordPress block themes.",
   "author": "Nao Komura",
   "categories": [
     "Formatters",
@@ -14,7 +14,8 @@
   ],
   "keywords": [
     "wordpress",
-    "html"
+    "html",
+    "vscode"
   ],
   "repository": {
     "type": "git",
