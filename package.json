@@ -1,11 +1,11 @@
 {
   "name": "vscode-wp-block-html",
   "publisher": "co6x0",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "icon": "images/icon.png",
   "displayName": "WP Block HTML",
-  "description": "Assist coding for unique HTML used in WordPress block themes.",
+  "description": "Assist coding for unique HTML used in WordPress Block Theme.",
   "author": "Nao Komura",
   "categories": [
     "Formatters",
