@@ -27,21 +27,8 @@ export function activate(context: vscode.ExtensionContext) {
 
   const disposableFormatting =
     vscode.languages.registerDocumentFormattingEditProvider(selector, provider);
+
   context.subscriptions.push(disposableFormatting);
-
-  // The command has been defined in the package.json file
-  // Now provide the implementation of the command with registerCommand
-  // The commandId parameter must match the command field in package.json
-  const disposableCommand = vscode.commands.registerCommand(
-    "wp-block-html.helloWorld",
-    () => {
-      // The code you place here will be executed every time your command is executed
-      // Display a message box to the user
-      vscode.window.showInformationMessage("Hello World from test!");
-    }
-  );
-
-  context.subscriptions.push(disposableCommand);
 }
 
 // This method is called when your extension is deactivated

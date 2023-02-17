@@ -1,4 +1,4 @@
-# wp-block-html README
+# VSCode WP Block HTML
 
 This is the README for your extension "wp-block-html". After writing up a brief description, we recommend including the following sections.
 

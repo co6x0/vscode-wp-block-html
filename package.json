@@ -1,30 +1,38 @@
 {
-  "name": "wp-block-html",
+  "name": "vscode-wp-block-html",
+  "publisher": "co6x0",
+  "version": "0.1.0",
+  "license": "MIT",
+  "icon": "icon.png",
   "displayName": "WP Block HTML",
   "description": "VSCode Extension that assist coding for unique HTML syntax used in WordPress block themes.",
-  "version": "0.0.1",
-  "license": "MIT",
   "author": "Nao Komura",
-  "publisher": "co6x0",
-  "engines": {
-    "vscode": "^1.74.0"
-  },
-  "main": "./out/extension.js",
   "categories": [
     "Formatters",
     "Themes",
     "Snippets"
   ],
+  "keywords": [
+    "wordpress",
+    "html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/co6x0/vscode-wp-block-html.git"
+  },
+  "bugs": {
+    "url": "https://github.com/co6x0/vscode-wp-block-html/issues"
+  },
+  "main": "./out/extension.js",
+  "engines": {
+    "vscode": "^1.74.0",
+    "node": "^16.0.0"
+  },
+  "packageManager": "npm@9.4.0",
   "capabilities": {
     "documentFormattingProvider": "true"
   },
   "contributes": {
-    "commands": [
-      {
-        "command": "wp-block-html.helloWorld",
-        "title": "Hello World"
-      }
-    ],
     "languages": [
       {
         "id": "html",
