@@ -1,7 +1,7 @@
 {
   "name": "vscode-wp-block-html",
   "publisher": "co6x0",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "icon": "images/icon.png",
   "displayName": "WP Block HTML",
@@ -73,7 +73,7 @@
   },
   "dependencies": {
     "prettier": "^2.8.4",
-    "prettier-plugin-wp-block-html": "^0.1.4"
+    "prettier-plugin-wp-block-html": "^0.1.5"
   },
   "devDependencies": {
     "@types/glob": "^8.0.0",
