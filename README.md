@@ -5,8 +5,8 @@ This extension assists coding of unique HTML including [Block markups](https://d
 ## Features
 
 - Formatting for HTML including Block markup (powered by [Prettier](https://prettier.io/) and [prettier-plugin-wp-block-html](https://github.com/co6x0/prettier-plugin-wp-block-html))
-- Snippets for Block markup
-- Syntax highlighting
+- Snippets for Block markup (supported file types: `.html`, `.php`)
+- Syntax highlighting for Block markup (supported file types: `.html`, `.php`)
 
 ![Extension Demo](./images/demo.gif)
 
