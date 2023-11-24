@@ -1,7 +1,7 @@
 {
   "name": "vscode-wp-block-html",
   "publisher": "co6x0",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "license": "MIT",
   "icon": "images/icon.png",
   "displayName": "WP Block HTML",
