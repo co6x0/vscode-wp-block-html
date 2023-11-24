@@ -14,26 +14,44 @@
     "body": ["<!-- wp:avatar $1/-->"],
     "description": "Add a user’s avatar. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#avatar"
   },
-  "Reusable block": {
-    "prefix": ["wp:reusable-block"],
-    "body": ["<!-- wp:reusable-block $1/-->"],
-    "description": "Create and save content to reuse across your site. Update the block, and the changes apply everywhere it’s used. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#reusable-block"
+  "Pattern": {
+    "prefix": ["wp:pattern"],
+    "body": ["<!-- wp:pattern {\"slug\":\"${1:theme}/${2:pattern}\"} /-->"],
+    "description": "Create and save content to reuse across your site. Update the pattern, and the changes apply everywhere it’s used. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#pattern"
   },
   "Button": {
     "prefix": ["wp:button"],
-    "body": ["<!-- wp:button -->", "$1", "<!-- /wp:button -->"],
+    "body": [
+      "<!-- wp:button -->",
+      "<div class=\"wp-block-button\">",
+      "<a class=\"wp-block-button__link wp-element-button\">",
+      "$1",
+      "</a>",
+      "</div>",
+      "<!-- /wp:button -->"
+    ],
     "description": "Prompt visitors to take action with a button-style link. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#button"
   },
   "Buttons": {
     "prefix": ["wp:buttons"],
     "body": [
       "<!-- wp:buttons -->",
+      "<div class=\"wp-block-buttons\">",
       "<!-- wp:button -->",
+      "<div class=\"wp-block-button\">",
+      "<a class=\"wp-block-button__link wp-element-button\">",
       "$1",
+      "</a>",
+      "</div>",
       "<!-- /wp:button -->",
       "<!-- wp:button -->",
+      "<div class=\"wp-block-button\">",
+      "<a class=\"wp-block-button__link wp-element-button\">",
       "$1",
+      "</a>",
+      "</div>",
       "<!-- /wp:button -->",
+      "</div>",
       "<!-- /wp:buttons -->"
     ],
     "description": "Prompt visitors to take action with a group of button-style links. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#buttons"
@@ -52,26 +70,34 @@
     "prefix": ["wp:code"],
     "body": [
       "<!-- wp:code -->",
-      "<pre><code>$1</code></pre>",
+      "<pre class=\"wp-block-code\">",
+      "<code>",
+      "$1",
+      "</code>",
+      "</pre>",
       "<!-- /wp:code -->"
     ],
     "description": "Display code snippets that respect your spacing and tabs. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#code"
   },
   "Column": {
     "prefix": ["wp:column"],
-    "body": ["<!-- wp:column -->", "<div>$1</div>", "<!-- /wp:column -->"],
+    "body": [
+      "<!-- wp:column -->",
+      "<div class=\"wp-block-column\">$1</div>",
+      "<!-- /wp:column -->"
+    ],
     "description": "A single column within a columns block. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#column"
   },
   "Columns": {
     "prefix": ["wp:columns"],
     "body": [
       "<!-- wp:columns -->",
-      "<div>",
+      "<div class=\"wp-block-columns\">",
       "<!-- wp:column -->",
-      "<div>$1</div>",
+      "<div class=\"wp-block-column\">$1</div>",
       "<!-- /wp:column -->",
       "<!-- wp:column -->",
-      "<div>$1</div>",
+      "<div class=\"wp-block-column\">$1</div>",
       "<!-- /wp:column -->",
       "</div>",
       "<!-- /wp:columns -->"
@@ -110,11 +136,7 @@
   },
   "Comment Template": {
     "prefix": ["wp:comment-template"],
-    "body": [
-      "<!-- wp:comment-template -->",
-      "$1",
-      "<!-- /wp:comment-template -->"
-    ],
+    "body": ["<!-- wp:comment-template $1/-->"],
     "description": "Contains the block elements used to display a comment, like the title, date, author, avatar and more. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#comment-template"
   },
   "Comments": {
@@ -124,13 +146,7 @@
   },
   "Comments Pagination": {
     "prefix": ["wp:comments-pagination"],
-    "body": [
-      "<!-- wp:comments-pagination -->",
-      "<!-- wp:comments-pagination-previous /-->",
-      "<!-- wp:comments-pagination-numbers /-->",
-      "<!-- wp:comments-pagination-next /-->",
-      "<!-- /wp:comments-pagination -->"
-    ],
+    "body": ["<!-- wp:comments-pagination $1/-->"],
     "description": "Displays a paginated navigation to next/previous set of comments, when applicable. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#comments-pagination"
   },
   "Comments Next Page": {
@@ -156,7 +172,25 @@
   "Cover": {
     "prefix": ["wp:cover"],
     "body": ["<!-- wp:cover $1/-->"],
-    "description": "Add an image or video with a text overlay — great for headers. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#cover"
+    "description": "Add an image or video with a text overlay. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#cover"
+  },
+  "Details": {
+    "prefix": ["wp:details"],
+    "body": [
+      "<!-- wp:details -->",
+      "<details class=\"wp-block-details\">",
+      "<summary>",
+      "$1",
+      "</summary>",
+      "<!-- wp:paragraph -->",
+      "<p>",
+      "$2",
+      "</p>",
+      "<!-- /wp:paragraph -->",
+      "</details>",
+      "<!-- /wp:details -->"
+    ],
+    "description": "Hide and show additional content. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#details"
   },
   "Embed": {
     "prefix": ["wp:embed"],
@@ -167,6 +201,31 @@
     "prefix": ["wp:file"],
     "body": ["<!-- wp:file $1/-->"],
     "description": "Add a link to a downloadable file. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#file"
+  },
+  "Footnotes": {
+    "prefix": ["wp:footnotes"],
+    "body": ["<!-- wp:footnotes $1/-->"],
+    "description": "Display footnotes added to the page. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#footnotes"
+  },
+  "Form": {
+    "prefix": ["wp:form"],
+    "body": ["<!-- wp:form $1/-->"],
+    "description": "A form. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#form"
+  },
+  "Input Field": {
+    "prefix": ["wp:input-field"],
+    "body": ["<!-- wp:input-field $1/-->"],
+    "description": "The basic building block for forms. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#input-field"
+  },
+  "Form Submission Notification": {
+    "prefix": ["wp:form-submission-notification"],
+    "body": ["<!-- wp:form-submission-notification $1/-->"],
+    "description": "Provide a notification message after the form has been submitted. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#form-submission-notification"
+  },
+  "Form Submit Button": {
+    "prefix": ["wp:form-submit-button"],
+    "body": ["<!-- wp:form-submit-button $1/-->"],
+    "description": "A submission button for forms. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#form-submit-button"
   },
   "Classic": {
     "prefix": ["wp:classic"],
@@ -182,7 +241,7 @@
     "prefix": ["wp:group"],
     "body": [
       "<!-- wp:group -->",
-      "<div>",
+      "<div class=\"wp-block-group\">",
       "$1",
       "</div>",
       "<!-- /wp:group -->"
@@ -191,7 +250,13 @@
   },
   "Heading": {
     "prefix": ["wp:heading"],
-    "body": ["<!-- wp:heading -->", "$1", "<!-- /wp:heading -->"],
+    "body": [
+      "<!-- wp:heading {\"level\":${1:1–6}} -->",
+      "<h${1:1–6} class=\"wp-block-heading\">",
+      "$2",
+      "</h${1:1–6}>",
+      "<!-- /wp:heading -->"
+    ],
     "description": "Introduce new sections and organize content to help visitors (and search engines) understand the structure of your content. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#heading"
   },
   "Home Link": {
@@ -221,12 +286,23 @@
   },
   "List": {
     "prefix": ["wp:list"],
-    "body": ["<!-- wp:list $1/-->"],
+    "body": [
+      "<!-- wp:list -->",
+      "<ul>",
+      "<!-- wp:list-item -->",
+      "<li>$1</li>",
+      "<!-- /wp:list-item -->",
+      "<!-- wp:list-item -->",
+      "<li>$1</li>",
+      "<!-- /wp:list-item -->",
+      "</ul>",
+      "<!-- /wp:list -->"
+    ],
     "description": "Create a bulleted or numbered list. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#list"
   },
   "List item": {
     "prefix": ["wp:list-item"],
-    "body": ["<!-- wp:list-item $1/-->"],
+    "body": ["<!-- wp:list-item -->", "<li>$1</li>", "<!-- /wp:list-item -->"],
     "description": "Create a list item. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#list-item"
   },
   "Login/out": {
@@ -284,65 +360,65 @@
     "body": ["<!-- wp:paragraph -->", "<p>$1</p>", "<!-- /wp:paragraph -->"],
     "description": "Start with the basic building block of all narrative. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#paragraph"
   },
-  "Pattern": {
-    "prefix": ["wp:pattern"],
-    "body": ["<!-- wp:pattern {\"slug\":\"${1:theme}/${2:pattern}\"} /-->"],
-    "description": "Show a block pattern. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#pattern"
+  "Pattern placeholder": {
+    "prefix": ["wp:pattern-placeholder"],
+    "body": ["<!-- wp:pattern-placeholder $1/-->"],
+    "description": "Show a block pattern. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#pattern-placeholder"
   },
-  "Post Author": {
-    "prefix": ["wp:post-author"],
-    "body": ["<!-- wp:post-author $1/-->"],
-    "description": "Display post author details such as name, avatar, and bio. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-author"
+  "Author": {
+    "prefix": ["wp:author"],
+    "body": ["<!-- wp:author $1/-->"],
+    "description": "Display post author details such as name, avatar, and bio. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#author"
   },
-  "Post Author Biography": {
-    "prefix": ["wp:post-author-biography"],
-    "body": ["<!-- wp:post-author-biography $1/-->"],
-    "description": "The author biography. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-author-biography"
+  "Author Biography": {
+    "prefix": ["wp:author-biography"],
+    "body": ["<!-- wp:author-biography $1/-->"],
+    "description": "The author biography. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#author-biography"
   },
-  "Post Author Name": {
-    "prefix": ["wp:post-author-name"],
-    "body": ["<!-- wp:post-author-name $1/-->"],
-    "description": "The author name. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-author-name"
+  "Author Name": {
+    "prefix": ["wp:author-name"],
+    "body": ["<!-- wp:author-name $1/-->"],
+    "description": "The author name. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#author-name"
   },
-  "Post Comment (deprecated)": {
-    "prefix": ["wp:post-comment-deprecated"],
-    "body": ["<!-- wp:post-comment-deprecated $1/-->"],
-    "description": "This block is deprecated. Please use the Comments block instead. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-comment-deprecated"
+  "Comment (deprecated)": {
+    "prefix": ["wp:comment-deprecated"],
+    "body": ["<!-- wp:comment-deprecated $1/-->"],
+    "description": "This block is deprecated. Please use the Comments block instead. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#comment-deprecated"
   },
-  "Post Comments Count": {
-    "prefix": ["wp:post-comments-count"],
-    "body": ["<!-- wp:post-comments-count $1/-->"],
-    "description": "Display a post’s comments count. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-comments-count"
+  "Comments Count": {
+    "prefix": ["wp:comments-count"],
+    "body": ["<!-- wp:comments-count $1/-->"],
+    "description": "Display a post’s comments count. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#comments-count"
   },
-  "Post Comments Form": {
-    "prefix": ["wp:post-comments-form"],
-    "body": ["<!-- wp:post-comments-form $1/-->"],
-    "description": "Display a post’s comments form. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-comments-form"
+  "Comments Form": {
+    "prefix": ["wp:comments-form"],
+    "body": ["<!-- wp:comments-form $1/-->"],
+    "description": "Display a post’s comments form. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#comments-form"
   },
-  "Post Comments Link": {
-    "prefix": ["wp:post-comments-link"],
-    "body": ["<!-- wp:post-comments-link $1/-->"],
-    "description": "Displays the link to the current post comments. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-comments-link"
+  "Comments Link": {
+    "prefix": ["wp:comments-link"],
+    "body": ["<!-- wp:comments-link $1/-->"],
+    "description": "Displays the link to the current post comments. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#comments-link"
   },
-  "Post Content": {
-    "prefix": ["wp:post-content"],
-    "body": ["<!-- wp:post-content $1/-->"],
-    "description": "Displays the contents of a post or page. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-content"
+  "Content": {
+    "prefix": ["wp:content"],
+    "body": ["<!-- wp:content $1/-->"],
+    "description": "Displays the contents of a post or page. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#content"
   },
-  "Post Date": {
-    "prefix": ["wp:post-date"],
-    "body": ["<!-- wp:post-date $1/-->"],
-    "description": "Add the date of this post. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-date"
+  "Date": {
+    "prefix": ["wp:date"],
+    "body": ["<!-- wp:date $1/-->"],
+    "description": "Display the publish date for an entry such as a post or page. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#date"
   },
-  "Post Excerpt": {
-    "prefix": ["wp:post-excerpt"],
-    "body": ["<!-- wp:post-excerpt $1/-->"],
-    "description": "Display a post’s excerpt. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-excerpt"
+  "Excerpt": {
+    "prefix": ["wp:excerpt"],
+    "body": ["<!-- wp:excerpt $1/-->"],
+    "description": "Display the excerpt. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#excerpt"
   },
-  "Post Featured Image": {
-    "prefix": ["wp:post-featured-image"],
-    "body": ["<!-- wp:post-featured-image $1/-->"],
-    "description": "Display a post’s featured image. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-featured-image"
+  "Featured Image": {
+    "prefix": ["wp:featured-image"],
+    "body": ["<!-- wp:featured-image $1/-->"],
+    "description": "Display a post’s featured image. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#featured-image"
   },
   "Post Navigation Link": {
     "prefix": ["wp:post-navigation-link"],
@@ -351,7 +427,7 @@
   },
   "Post Template": {
     "prefix": ["wp:post-template"],
-    "body": ["<!-- wp:post-template -->", "$1", "<!-- /wp:post-template -->"],
+    "body": ["<!-- wp:post-template $1/-->"],
     "description": "Contains the block elements used to render a post, like the title, date, featured image, content or excerpt, and more. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-template"
   },
   "Post Terms": {
@@ -359,14 +435,25 @@
     "body": ["<!-- wp:post-terms $1/-->"],
     "description": "Post terms. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-terms"
   },
-  "Post Title": {
-    "prefix": ["wp:post-title"],
-    "body": ["<!-- wp:post-title $1/-->"],
-    "description": "Displays the title of a post, page, or any other content-type. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-title"
+  "Time To Read": {
+    "prefix": ["wp:time-to-read"],
+    "body": ["<!-- wp:time-to-read $1/-->"],
+    "description": "Show minutes required to finish reading the post. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#time-to-read"
+  },
+  "Title": {
+    "prefix": ["wp:title"],
+    "body": ["<!-- wp:title $1/-->"],
+    "description": "Displays the title of a post, page, or any other content-type. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#title"
   },
   "Preformatted": {
     "prefix": ["wp:preformatted"],
-    "body": ["<!-- wp:preformatted $1/-->"],
+    "body": [
+      "<!-- wp:preformatted -->",
+      "<pre class=\"wp-block-preformatted\">",
+      "$1",
+      "</pre>",
+      "<!-- /wp:preformatted -->"
+    ],
     "description": "Add text that respects your spacing and tabs, and also allows styling. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#preformatted"
   },
   "Pullquote": {
@@ -375,12 +462,8 @@
     "description": "Give special visual emphasis to a quote from your text. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#pullquote"
   },
   "Query Loop": {
-    "prefix": ["wp:query"],
-    "body": [
-      "<!-- wp:query {\"query\":{\"perPage\":5,\"pages\":0,\"postType\":\"post\",\"order\":\"desc\",\"orderBy\":\"date\"}} -->",
-      "$1",
-      "<!-- /wp:query -->"
-    ],
+    "prefix": ["wp:query-loop"],
+    "body": ["<!-- wp:query-loop $1/-->"],
     "description": "An advanced block that allows displaying post types based on different query parameters and visual configurations. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#query-loop"
   },
   "No results": {
@@ -415,7 +498,16 @@
   },
   "Quote": {
     "prefix": ["wp:quote"],
-    "body": ["<!-- wp:quote $1/-->"],
+    "body": [
+      "<!-- wp:quote -->",
+      "<blockquote class=\"wp-block-quote\">",
+      "<!-- wp:paragraph -->",
+      "<p>$1</p>",
+      "<!-- /wp:paragraph -->",
+      "<cite>$2</cite>",
+      "</blockquote>",
+      "<!-- /wp:quote -->"
+    ],
     "description": "Give quoted text visual emphasis. “In quoting others, we cite ourselves.” — Julio Cortázar https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#quote"
   },
   "Read More": {
@@ -435,7 +527,11 @@
   },
   "Separator": {
     "prefix": ["wp:separator"],
-    "body": ["<!-- wp:separator $1/-->"],
+    "body": [
+      "<!-- wp:separator -->",
+      "<hr class=\"wp-block-separator\" />",
+      "<!-- /wp:separator -->"
+    ],
     "description": "Create a break between ideas or sections with a horizontal separator. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#separator"
   },
   "Shortcode": {
@@ -446,7 +542,7 @@
   "Site Logo": {
     "prefix": ["wp:site-logo"],
     "body": ["<!-- wp:site-logo $1/-->"],
-    "description": "Display a graphic to represent this site. Update the block, and the changes apply everywhere it’s used. This is different than the site icon, which is the smaller image visible in your dashboard, browser tabs, etc used to help others recognize this site. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#site-logo"
+    "description": "Display an image to represent this site. Update this block and the changes apply everywhere. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#site-logo"
   },
   "Site Tagline": {
     "prefix": ["wp:site-tagline"],
@@ -475,7 +571,24 @@
   },
   "Table": {
     "prefix": ["wp:table"],
-    "body": ["<!-- wp:table $1/-->"],
+    "body": [
+      "<!-- wp:table -->",
+      "<figure class=\"wp-block-table\">",
+      "<table>",
+      "<tbody>",
+      "<tr>",
+      "<td>1</td>",
+      "<td>2</td>",
+      "</tr>",
+      "<tr>",
+      "<td>A</td>",
+      "<td>B</td>",
+      "</tr>",
+      "</tbody>",
+      "</table>",
+      "</figure>",
+      "<!-- /wp:table -->"
+    ],
     "description": "Create structured content in rows and columns to display information. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#table"
   },
   "Table of Contents": {

@@ -1,4 +1,4 @@
-// https://developer.wordpress.org/block-editor/reference-guides/core-blocks/
+// run on https://developer.wordpress.org/block-editor/reference-guides/core-blocks/
 const elements = document.getElementsByClassName("toc-header");
 const arrayElements = Object.values(elements);
 const snippets = arrayElements.map((element) => {

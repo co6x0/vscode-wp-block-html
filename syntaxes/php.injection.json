@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Custom HTML Syntax Highlight for WP Block HTML",
+  "fileTypes": ["php"],
+  "scopeName": "source.injection.wp-block-html-php",
+  "injectionSelector": "L:text.html.php",
+  "patterns": [
+    {
+      "begin": "(<!--\\s)(wp:)([^\\s]*)",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.begin.wp-block-html"
+        },
+        "2": {
+          "name": "keyword.prefix.wp-block-html"
+        },
+        "3": {
+          "name": "entity.name.tag.block.wp-block-html"
+        }
+      },
+      "end": "(\\s-->|\\s/-->)",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.tag.end.wp-block-html"
+        }
+      },
+      "patterns": [
+        {
+          "match": "({)(.*)(})",
+          "captures": {
+            "1": {
+              "name": "string.bracket.wp-block-html"
+            },
+            "2": {
+              "name": "string.bracket.wp-block-html",
+              "patterns": [
+                {
+                  "match": "\"([^\"]*)\"",
+                  "name": "constant.prop.wp-block-html"
+                },
+                {
+                  "match": ":\\s*\"([^\"]*)\"",
+                  "name": "string.bracket.wp-block-html"
+                }
+              ]
+            },
+            "3": {
+              "name": "string.bracket.wp-block-html"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "begin": "(<!--\\s/)(wp:)([^\\s]*)",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.definition.tag.begin.wp-block-html"
+        },
+        "2": {
+          "name": "keyword.prefix.wp-block-html"
+        },
+        "3": {
+          "name": "entity.name.tag.block.wp-block-html"
+        }
+      },
+      "end": "(\\s-->)",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.tag.end.wp-block-html"
+        }
+      }
+    }
+  ]
+}
