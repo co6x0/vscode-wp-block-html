@@ -15,8 +15,8 @@
     "description": "Add a user’s avatar. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#avatar"
   },
   "Pattern": {
-    "prefix": ["wp:pattern"],
-    "body": ["<!-- wp:pattern {\"slug\":\"${1:theme}/${2:pattern}\"} /-->"],
+    "prefix": ["wp:block"],
+    "body": ["<!-- wp:block {\"ref\":\"$1\"} /-->"],
     "description": "Create and save content to reuse across your site. Update the pattern, and the changes apply everywhere it’s used. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#pattern"
   },
   "Button": {
@@ -361,8 +361,8 @@
     "description": "Start with the basic building block of all narrative. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#paragraph"
   },
   "Pattern placeholder": {
-    "prefix": ["wp:pattern-placeholder"],
-    "body": ["<!-- wp:pattern-placeholder $1/-->"],
+    "prefix": ["wp:pattern"],
+    "body": ["<!-- wp:pattern {\"slug\":\"${1:theme}/${2:pattern}\"} /-->"],
     "description": "Show a block pattern. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#pattern-placeholder"
   },
   "Author": {
