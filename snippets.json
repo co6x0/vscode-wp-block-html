@@ -366,58 +366,58 @@
     "description": "Show a block pattern. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#pattern-placeholder"
   },
   "Author": {
-    "prefix": ["wp:author"],
-    "body": ["<!-- wp:author $1/-->"],
+    "prefix": ["wp:post-author"],
+    "body": ["<!-- wp:post-author $1/-->"],
     "description": "Display post author details such as name, avatar, and bio. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#author"
   },
   "Author Biography": {
-    "prefix": ["wp:author-biography"],
-    "body": ["<!-- wp:author-biography $1/-->"],
+    "prefix": ["wp:post-author-biography"],
+    "body": ["<!-- wp:post-author-biography $1/-->"],
     "description": "The author biography. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#author-biography"
   },
   "Author Name": {
-    "prefix": ["wp:author-name"],
-    "body": ["<!-- wp:author-name $1/-->"],
+    "prefix": ["wp:post-author-name"],
+    "body": ["<!-- wp:post-author-name $1/-->"],
     "description": "The author name. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#author-name"
   },
   "Comment (deprecated)": {
-    "prefix": ["wp:comment-deprecated"],
-    "body": ["<!-- wp:comment-deprecated $1/-->"],
+    "prefix": ["wp:post-comment-deprecated"],
+    "body": ["<!-- wp:post-comment-deprecated $1/-->"],
     "description": "This block is deprecated. Please use the Comments block instead. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#comment-deprecated"
   },
   "Comments Count": {
-    "prefix": ["wp:comments-count"],
-    "body": ["<!-- wp:comments-count $1/-->"],
+    "prefix": ["wp:post-comments-count"],
+    "body": ["<!-- wp:post-comments-count $1/-->"],
     "description": "Display a post’s comments count. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#comments-count"
   },
   "Comments Form": {
-    "prefix": ["wp:comments-form"],
-    "body": ["<!-- wp:comments-form $1/-->"],
+    "prefix": ["wp:post-comments-form"],
+    "body": ["<!-- wp:post-comments-form $1/-->"],
     "description": "Display a post’s comments form. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#comments-form"
   },
   "Comments Link": {
-    "prefix": ["wp:comments-link"],
-    "body": ["<!-- wp:comments-link $1/-->"],
+    "prefix": ["wp:post-comments-link"],
+    "body": ["<!-- wp:post-comments-link $1/-->"],
     "description": "Displays the link to the current post comments. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#comments-link"
   },
   "Content": {
-    "prefix": ["wp:content"],
-    "body": ["<!-- wp:content $1/-->"],
+    "prefix": ["wp:post-content"],
+    "body": ["<!-- wp:post-content $1/-->"],
     "description": "Displays the contents of a post or page. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#content"
   },
   "Date": {
-    "prefix": ["wp:date"],
-    "body": ["<!-- wp:date $1/-->"],
+    "prefix": ["wp:post-date"],
+    "body": ["<!-- wp:post-date $1/-->"],
     "description": "Display the publish date for an entry such as a post or page. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#date"
   },
   "Excerpt": {
-    "prefix": ["wp:excerpt"],
-    "body": ["<!-- wp:excerpt $1/-->"],
+    "prefix": ["wp:post-excerpt"],
+    "body": ["<!-- wp:post-excerpt $1/-->"],
     "description": "Display the excerpt. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#excerpt"
   },
   "Featured Image": {
-    "prefix": ["wp:featured-image"],
-    "body": ["<!-- wp:featured-image $1/-->"],
+    "prefix": ["wp:post-featured-image"],
+    "body": ["<!-- wp:post-featured-image $1/-->"],
     "description": "Display a post’s featured image. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#featured-image"
   },
   "Post Navigation Link": {
@@ -436,13 +436,13 @@
     "description": "Post terms. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#post-terms"
   },
   "Time To Read": {
-    "prefix": ["wp:time-to-read"],
-    "body": ["<!-- wp:time-to-read $1/-->"],
+    "prefix": ["wp:post-time-to-read"],
+    "body": ["<!-- wp:post-time-to-read $1/-->"],
     "description": "Show minutes required to finish reading the post. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#time-to-read"
   },
   "Title": {
-    "prefix": ["wp:title"],
-    "body": ["<!-- wp:title $1/-->"],
+    "prefix": ["wp:post-title"],
+    "body": ["<!-- wp:post-title $1/-->"],
     "description": "Displays the title of a post, page, or any other content-type. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#title"
   },
   "Preformatted": {
@@ -462,33 +462,33 @@
     "description": "Give special visual emphasis to a quote from your text. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#pullquote"
   },
   "Query Loop": {
-    "prefix": ["wp:query-loop"],
-    "body": ["<!-- wp:query-loop $1/-->"],
+    "prefix": ["wp:query"],
+    "body": ["<!-- wp:query $1/-->"],
     "description": "An advanced block that allows displaying post types based on different query parameters and visual configurations. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#query-loop"
   },
   "No results": {
-    "prefix": ["wp:no-results"],
-    "body": ["<!-- wp:no-results $1/-->"],
+    "prefix": ["wp:query-no-results"],
+    "body": ["<!-- wp:query-no-results $1/-->"],
     "description": "Contains the block elements used to render content when no query results are found. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#no-results"
   },
   "Pagination": {
-    "prefix": ["wp:pagination"],
-    "body": ["<!-- wp:pagination $1/-->"],
+    "prefix": ["wp:query-pagination"],
+    "body": ["<!-- wp:query-pagination $1/-->"],
     "description": "Displays a paginated navigation to next/previous set of posts, when applicable. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#pagination"
   },
   "Next Page": {
-    "prefix": ["wp:next-page"],
-    "body": ["<!-- wp:next-page $1/-->"],
+    "prefix": ["wp:query-pagination-next"],
+    "body": ["<!-- wp:query-pagination-next $1/-->"],
     "description": "Displays the next posts page link. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#next-page"
   },
   "Page Numbers": {
-    "prefix": ["wp:page-numbers"],
-    "body": ["<!-- wp:page-numbers $1/-->"],
+    "prefix": ["wp:query-pagination-numbers"],
+    "body": ["<!-- wp:query-pagination-numbers $1/-->"],
     "description": "Displays a list of page numbers for pagination https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#page-numbers"
   },
   "Previous Page": {
-    "prefix": ["wp:previous-page"],
-    "body": ["<!-- wp:previous-page $1/-->"],
+    "prefix": ["wp:query-pagination-previous"],
+    "body": ["<!-- wp:query-pagination-previous $1/-->"],
     "description": "Displays the previous posts page link. https://developer.wordpress.org/block-editor/reference-guides/core-blocks/#previous-page"
   },
   "Query Title": {
