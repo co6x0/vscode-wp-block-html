@@ -13,6 +13,7 @@ This extension assists coding of unique HTML including [Block markups](https://d
 ## Usage
 
 Just install the extension to use Block markup syntax highlighting and snippets in your HTML files.
+The formatter uses the bundled Prettier 3 and `prettier-plugin-wp-block-html`.
 
 To use code formatting, you will need to change your user or workspace settings. (Mac: `⌘ + ,` | Win: `Ctrl + ,`)
 

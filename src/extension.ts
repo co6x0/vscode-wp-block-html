@@ -1,27 +1,57 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
 import type { DocumentSelector, DocumentFormattingEditProvider } from "vscode";
-const prettier = require("prettier");
+import * as prettier from "prettier";
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
+let pluginPromise: Promise<prettier.Plugin> | undefined;
+
+async function getWpBlockHtmlPlugin(): Promise<prettier.Plugin> {
+  pluginPromise ??= import("prettier-plugin-wp-block-html").then((plugin) => {
+    return plugin.default ?? plugin;
+  });
+
+  return pluginPromise;
+}
+
 export function activate(context: vscode.ExtensionContext) {
   const selector: DocumentSelector = { scheme: "file", language: "html" };
   const provider: DocumentFormattingEditProvider = {
-    provideDocumentFormattingEdits(document, options, token) {
+    async provideDocumentFormattingEdits(document, options, token) {
       const text = document.getText();
-      const formattedText = prettier.format(text, {
-        parser: "html",
-        plugins: [require("prettier-plugin-wp-block-html")],
-      });
 
-      const range = new vscode.Range(
-        document.positionAt(0),
-        document.positionAt(text.length)
-      );
-      const textEdit = new vscode.TextEdit(range, formattedText);
-      return [textEdit];
+      try {
+        const plugin = await getWpBlockHtmlPlugin();
+
+        if (token.isCancellationRequested) {
+          return [];
+        }
+
+        const formattedText = await prettier.format(text, {
+          filepath: document.uri.fsPath,
+          parser: "wp-block-html",
+          plugins: [plugin],
+          tabWidth: options.tabSize,
+          useTabs: !options.insertSpaces,
+        });
+
+        if (token.isCancellationRequested || formattedText === text) {
+          return [];
+        }
+
+        const range = new vscode.Range(
+          document.positionAt(0),
+          document.positionAt(text.length)
+        );
+
+        return [new vscode.TextEdit(range, formattedText)];
+      } catch (error) {
+        const message =
+          error instanceof Error ? error.message : "Unknown formatting error";
+        void vscode.window.showErrorMessage(
+          `WP Block HTML formatting failed: ${message}`
+        );
+
+        return [];
+      }
     },
   };
 
@@ -31,5 +61,4 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(disposableFormatting);
 }
 
-// This method is called when your extension is deactivated
 export function deactivate() {}

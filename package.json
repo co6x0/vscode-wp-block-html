@@ -26,11 +26,11 @@
   },
   "main": "./out/extension.js",
   "engines": {
-    "vscode": "^1.84.0"
+    "vscode": "^1.120.0"
   },
-  "capabilities": {
-    "documentFormattingProvider": "true"
-  },
+  "activationEvents": [
+    "onLanguage:html"
+  ],
   "contributes": {
     "languages": [
       {
@@ -88,23 +88,27 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src --ext ts",
+    "lint": "eslint src",
     "test": "node ./out/test/runTest.js"
   },
   "dependencies": {
-    "prettier": "^3.1.0",
-    "prettier-plugin-wp-block-html": "^0.2.1"
+    "prettier": "^3.8.3",
+    "prettier-plugin-wp-block-html": "^0.3.1"
   },
   "devDependencies": {
-    "@types/mocha": "^10.0.3",
-    "@types/node": "18.x",
-    "@types/vscode": "^1.84.0",
-    "@typescript-eslint/eslint-plugin": "^6.12.0",
-    "@typescript-eslint/parser": "^6.12.0",
-    "@vscode/test-electron": "^2.3.6",
-    "eslint": "^8.54.0",
-    "glob": "^10.3.10",
-    "mocha": "^10.2.0",
-    "typescript": "^5.2.2"
+    "@types/mocha": "^10.0.10",
+    "@types/node": "24.x",
+    "@types/vscode": "^1.120.0",
+    "@typescript-eslint/eslint-plugin": "^8.60.1",
+    "@typescript-eslint/parser": "^8.60.1",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^10.4.1",
+    "glob": "^13.0.6",
+    "mocha": "^11.7.6",
+    "typescript": "^6.0.3"
+  },
+  "overrides": {
+    "diff": "^9.0.0",
+    "serialize-javascript": "^7.0.5"
   }
 }
