@@ -6,4 +6,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-- Initial release
+- Update `prettier-plugin-wp-block-html` to 0.3.1.
+- Fix formatting with Prettier 3's async API.
+- Update VS Code extension dependencies and formatter integration tests.
+- Refresh snippets from the WordPress Core Blocks Reference.
+- Replace the snippet generator with a Node.js script.
